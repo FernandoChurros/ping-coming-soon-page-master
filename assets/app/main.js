@@ -3,9 +3,12 @@ const input = document.querySelector('#input-email');
 const error = document.querySelector('#msg-error');
 
 btn.addEventListener( 'click', () => {
-	if (input.value == '') {
-		error.classList.remove('hidden');
-	} else {
+
+	let newInput = input.value.split('');
+
+	if (newInput.find( el => el == '@' ) == '@') {
 		error.classList.add('hidden');
+	} else {
+		error.classList.remove('hidden');
 	}
 } )
