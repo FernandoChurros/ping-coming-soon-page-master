@@ -51,4 +51,9 @@ a {
 }
 button, input {
    box-sizing: border-box;
+   border: none;
+}
+
+button {
+	cursor: pointer;
 }
