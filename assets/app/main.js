@@ -4,8 +4,8 @@ const error = document.querySelector('#msg-error');
 
 btn.addEventListener( 'click', () => {
 
-	const inputArray = input.value.split('');
-	const isValidEmail = inputArray.find( el => el == '@' );
+	const inputVal = input.value;
+	const isValidEmail = inputVal.includes('@');
 
 	if (isValidEmail) {
 		error.classList.add('hidden');
